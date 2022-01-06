@@ -34,9 +34,57 @@ public class Sketch extends PApplet {
     {
       stroke(0, 76, 255);
       fill(0, 76, 255);
-      ellipse(mouseX, mouseY, 100, 100);
+      ellipse(mouseX, mouseY, 75, 75);
     }
 
+    if(key == 's')
+    {
+      stroke(0, 76, 255);
+      fill(0, 76, 255);
+      rect(0,0,400, 100);
+      
+      stroke(255, 227, 115);
+      fill(255, 227, 115);
+      rect(0, 0, 400, 75);
+    }
+
+    if(key == 'u')
+    {
+      stroke(250, 214, 165);
+      fill(250, 214, 165);
+      rect(0, 0, 400, 75);
+    }
+
+    if(key == 'n')
+    {
+      stroke(252, 156, 84);
+      fill(252, 156, 84);
+      rect(0, 0, 400, 75);
+
+      stroke(230, 255, 8);
+      fill(230, 255, 8);
+      arc(200, 75, 80, 80, -PI, 0);
+      
+    }
+
+    if(key == 'e')
+    {
+      stroke(75, 61, 96);
+      fill(75, 61, 96);
+      rect(0, 0, 400, 75);
+    }
+
+    if(key == 't')
+    {
+      stroke(21, 40, 82);
+      fill(21, 40, 82);
+      rect(0, 0, 400, 75);
+
+      stroke(199, 212, 199);
+      fill(199, 212, 199);
+      arc(200, 75, 80, 80, -PI, 0);
+    }
+    
   }
 
   public void mousePressed()
@@ -58,19 +106,19 @@ public class Sketch extends PApplet {
   {
     stroke(255, 255, 255);
     fill(255, 255, 255);
-    ellipse(300, 30, 20, 20);
+    ellipse(250, 120, 20, 20);
 
     stroke(255, 255, 255);
     fill(255, 255, 255);
-    ellipse(300, 40, 20, 20);
+    ellipse(250, 130, 20, 20);
 
     stroke(255, 255, 255);
     fill(255, 255, 255);
-    ellipse(285, 40, 20, 20);
+    ellipse(235, 130, 20, 20);
 
     stroke(255, 255, 255);
     fill(255, 255, 255);
-    ellipse(315, 40, 20, 20);
+    ellipse(265, 130, 20, 20);
   }
 
   public void mouseClicked()
