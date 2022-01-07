@@ -1,7 +1,9 @@
 import processing.core.PApplet;
 
 public class Sketch extends PApplet {
-	
+  public float treeX = 300;
+  public float treeY = 200;
+  public String message = "";
 	
   /**
    * Called once at the beginning of execution, put your size all in this method
@@ -36,6 +38,7 @@ public class Sketch extends PApplet {
       fill(0, 76, 255);
       ellipse(mouseX, mouseY, 75, 75);
     }
+
 
     if(key == 's')
     {
@@ -84,6 +87,7 @@ public class Sketch extends PApplet {
       fill(199, 212, 199);
       arc(200, 75, 80, 80, -PI, 0);
     }
+
     
   }
 
@@ -125,7 +129,7 @@ public class Sketch extends PApplet {
   {
     stroke(165,42,42);
     fill(165,42,42);
-    rect(300,200,20,150);
+    rect(treeX, treeY,20,150);
     
     stroke(45, 201, 14);
     fill(45, 201, 14);
@@ -142,9 +146,5 @@ public class Sketch extends PApplet {
     stroke(45, 201, 14);
     fill(45, 201, 14);
     ellipse(310,170,50,50);
-
   }
-
-  
-  // define other methods down here.
 }
